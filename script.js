@@ -21,6 +21,11 @@ window.onscroll = () => {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        };
+
+    });
+    let header=document.querySelector('header');
 
     header.classList.toggle('sticky',window.screenY>100);
     menu

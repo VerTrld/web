@@ -84,7 +84,9 @@ div.desc {
     box-shadow: 0 0 2px rgba(231, 76, 60, 1)!important;
   }
   
-
+  #input-submit {
+    display: inline-block;
+      padding: 1rem 2.8rem;
       background: var(--main-color);
       box-shadow: 0 0 1rem var(--main-color);
       font-size: 1.6rem;
@@ -92,15 +94,15 @@ div.desc {
       letter-spacing: .1rem;
       font-weight: 600;
       transition: .5s ease;
-  }d
+  }
   
-  #input-submit:hover {da
-    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, adada0.6);
-  }ad
+  #input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  }
   
   form textarea {
     height: 126px;
-  }adad
+  }
   
   @media screen and (max-width: 768px) {
     div.gallery {
