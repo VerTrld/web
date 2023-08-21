@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand mx-auto">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Certificate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Your HTML code here -->
+
+<script>
+    // Close navbar when clicking outside
+    document.addEventListener('click', function(event) {
+      var target = event.target;
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+  
+      if (target !== navbarToggler && !navbarCollapse.contains(target)) {
+        navbarCollapse.classList.remove('show');
+      }
+    });
+  </script>
+  
+
+    <div class="typewriter">
+        <div class="jumbotron">
+          <div class="container d-flex justify-content-between align-items-center" style="padding-top: 50px;">
+            <div class="text-left">
+              <h1>Hi, I'M JOLLEVER</h1>
+              <p>Web Developer</p>
+             <a href="resume.pdf"><button type="button" class="btn btn-primary">Resume</button></a> 
+              <a href="project.html"><button type="button" class="btn btn-outline-light">Project</button></a>
+            </div>
+            <img src="me.png" alt="My Image" id="me" alt="Image">
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        #me{
+          width: 40%;
+          border-radius: 25px;
+          background: #73AD21;
+          padding: 10px;
+        }
+        .typewriter h1 {
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid black; /* The typewriter cursor */
+          white-space: nowrap; /* Keeps the content on a single line */
+          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+          letter-spacing: .15em; /* Adjust as needed */
+          animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+      
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+      
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: #73AD21; }
+        }
+      
+        @media screen and (max-width: 768px) {
+
+          #me{
+          width: 40%;
+          border-radius: 25px;
+          background: #73AD21;
+          padding: 5px;
+        }
+
+
+            .typewriter h1 {
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid black; /* The typewriter cursor */
+          white-space: nowrap; /* Keeps the content on a single line */
+          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+          letter-spacing: .15em; /* Adjust as needed */
+          animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+          font-size: 24px;
+        }
+      
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+      
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: #73AD21; }
+        }
+
+
+        }
+      </style>
+      
+
+    <br>
+    <div class="main" id="section2" style="text-align: center;">
+        <style>
+            .shadow-wrapper {
+                display: inline-block;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                padding: 10px;
+                width: 80%;
+            }
+            
+            .container-fluid {
+                text-align: left;
+            }
+        </style>
+    
+        <div class="shadow-wrapper">
+            <h3 class="text-justify">About Me</h3><br>
+            <div class="container-fluid bg-3 text-justify">
+                <p>Hello, I'm Jollever Toralde. I graduated with a Bachelor of Science in Computer Engineering. 
+                    I started learning web development when I was in senior high school, and I fell in love with it because it's fun and rewarding. 
+                    Learning something new always brings me joy.</p>
+                    
+                    <p>Today, I'm deeply invested in lifelong learning because I want to become a back-end developer someday. 
+                    I have knowledge in web development such as PHP, JavaScript, MySQL, HTML, CSS, and Bootstrap. 
+                    For hardware, I have experience with C++ and Arduino.</p>
+                    
+                    <p>I LOVE solving problems and being part of a group that creates valuable things. 
+                    I'm a person more focused on long-term goals because it makes me disciplined, patient, and motivated to keep going on what I'm doing.</p>
+                           
+            </div>
+        </div>
+    </div>
+    
+        
+        
+
+<!--         <div class="row">
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div><br> -->
+
+
+    <br><br><br>
+
+
+    <div class="main" id="section3" style="text-align: center;">
+        <style>
+            .shadow-wrapper {
+                display: inline-block;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                padding: 10px;
+                width: 80%;
+            }
+            
+            .container-fluid {
+                text-align: left;
+            }
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .icon{
+            width: 70px;
+            cursor: pointer;
+        }
+
+     @media screen and (max-width: 768px) {
+
+        .grid-item {
+            font-size: 14px;
+          
+        
+    }
+}
+
+        </style>
+    
+        <div class="shadow-wrapper">
+            <h3 class="text-justify">Skills</h3><br>
+            <div class="container-fluid bg-3 text-center">
+
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="img/html.png" alt="Description of the image" class="icon" title="HTML5" >
+                      </div>
+
+                    <div class="grid-item">
+                        <img src="img/css.png" alt="Description of the image" class="icon" title="CSS3">
+                      </div>
+                      
+                      <div class="grid-item">
+                        <img src="img/bootsrap.png" alt="Description of the image" class="icon" title="Bootstrap">
+                      </div>
+
+                      <div class="grid-item">
+                        <img src="img/js.png" alt="Description of the image" class="icon" title="JavaScript">
+                      </div>
+
+                      <div class="grid-item">
+                        <img src="img/php.png" alt="Description of the image" class="icon" title="PHP">
+                      </div>
+
+                      <div class="grid-item">
+                        <img src="img/mysql.png" alt="Description of the image" class="icon" title="MySQL">
+                      </div>
+
+                      <div class="grid-item">
+                        <img src="img/cplus.png" alt="Description of the image" class="icon" title="C++">
+                      </div>
+
+                </div>     
+                <h3 class="text-justify">Others</h3><br>  
+                <div class="grid">
+                <div class="grid-item">Teamwork</div>
+                <div class="grid-item">Collaborative</div>
+                <div class="grid-item">Leadership</div>    
+
+              </div>
+            </div> 
+          </div>
+
+    <br><br><br>
+
+    <div class="shadow-wrapper">
+      <h3 class="text-justify">Certificate</h3><br>
+      <div class="container-fluid bg-3 text-justify">
+
+
+        <style>
+          img {
+            vertical-align: middle;
+            size: 1px;
+          }
+          
+          /* Position the image container (needed to position the left and right arrows) */
+          .container {
+            position: relative;
+          }
+          
+          /* Hide the images by default */
+          .mySlides {
+            display: none;
+          }
+          
+          /* Add a pointer when hovering over the thumbnail images */
+          .cursor {
+            cursor: pointer;
+          }
+          
+          /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+            font-size: 40px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+          }
+          
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+          
+          /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+          /* Container for image text */
+          .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Six columns side by side */
+          .column {
+            float: left;
+            width: 16.66%;
+          }
+          
+          /* Add a transparency effect for thumnbail images */
+          .demo {
+            opacity: 0.6;
+          }
+          
+          .active,
+          .demo:hover {
+            opacity: 1;
+          }
+
+          @media screen and (max-width: 768px) {
+
+                      /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 60%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+          }
+          
+
+  
+
+    }
+  
+          </style>
+          
+          
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="certificate/GoPh.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="certificate/AWS.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="certificate/Cyber Security.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="certificate/Cloud Service.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="certificate/Compute cloud service.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="certificate/IoT .png" style="width:100%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+          
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+          
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+          
+            function showSlides(n) {
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+            }
+          </script>
+          
+
+        
+
+
+
+     </div>
+ </div>
+    
+
+
+    <footer class="container-fluid text-center">
+        <br><br>
+    
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+.container-fluid {
+    text-align: left;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+}
+
+.grid-item {
+background-color: #f2f2f2;
+padding: 20px;
+text-align: center;
+}
+
+.icon{
+width: 70px;
+cursor: pointer;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center; /* Center the content horizontally */
+    margin-top: 0px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    display: block; /* Change the display property to block */
+    margin: 0 auto; /* Set left and right margins to auto for centering */
+    width: 50%; /* Set the image size to 50% of its original width */
+    height: auto;
+}
+
+div.desc {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+  form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  form input,
+  form textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    box-shadow: 0 0 2px rgba(231, 76, 60, 1)!important;
+  }
+  
+  #input-submit {
+    display: inline-block;
+      padding: 1rem 2.8rem;
+      background: var(--main-color);
+      box-shadow: 0 0 1rem var(--main-color);
+      font-size: 1.6rem;
+      color: var(--second-bg-color);
+      letter-spacing: .1rem;
+      font-weight: 600;
+      transition: .5s ease;
+  }
+  
+  #input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  }
+  
+  form textarea {
+    height: 126px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    div.gallery {
+        width: 100%; /* Change the width to 100% for a single column layout */
+        float: none; /* Remove the float to stack the gallery items vertically */
+    }
+}
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid-item {
+      font-size: 14px;
+    }
+   }
